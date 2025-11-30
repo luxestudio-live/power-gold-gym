@@ -4,21 +4,21 @@ const testimonials = [
   {
     name: "Amit Verma",
     role: "Lost 22kg in 6 months",
-    image: "/happy-male-gym-member-testimonial-portrait.jpg",
+    image: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/happy-male-gym-member-testimonial-portrait.jpg`,
     text: "Power Gold Gym transformed my health. The trainers motivated me every step. I feel energetic and confident.",
     rating: 5,
   },
   {
     name: "Sneha Kulkarni",
     role: "Half Marathon Finisher",
-    image: "/female-runner-athlete-testimonial-portrait.jpg",
+    image: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/female-runner-athlete-testimonial-portrait.jpg`,
     text: "The customized training helped me finish my first half marathon. The gym and trainers are excellent.",
     rating: 5,
   },
   {
     name: "Rahul Mehta",
     role: "Business Owner",
-    image: "/professional-man-gym-member-testimonial-portrait.jpg",
+    image: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/professional-man-gym-member-testimonial-portrait.jpg`,
     text: "As a business owner, I value flexible timings and effective workouts. Power Gold Gym is the best investment for my health.",
     rating: 5,
   },
@@ -47,7 +47,7 @@ export function TestimonialsSection() {
               <p className="text-neutral-300 mb-6 leading-relaxed">{testimonial.text}</p>
               <div className="flex items-center gap-4">
                 <img
-                  src={testimonial.image || "/placeholder.svg"}
+                  src={testimonial.image || `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/placeholder.svg`}
                   alt={testimonial.name}
                   className="w-14 h-14 rounded-full object-cover border-2 border-gold"
                 />

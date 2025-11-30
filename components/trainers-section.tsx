@@ -4,25 +4,25 @@ const trainers = [
   {
     name: "Rohan Sharma",
     role: "Head Strength Coach",
-    image: "/muscular-male-fitness-trainer-professional-photo.jpg",
+    image: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/muscular-male-fitness-trainer-professional-photo.jpg`,
     bio: "15+ years experience, Gold's Gym India certified",
   },
   {
     name: "Priya Singh",
     role: "Bollywood Dance & HIIT Specialist",
-    image: "/female-fitness-trainer-professional-photo-athletic.jpg",
+    image: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/female-fitness-trainer-professional-photo-athletic.jpg`,
     bio: "National dance champion, ACE certified",
   },
   {
     name: "Arjun Patel",
     role: "Cricket Fitness Coach",
-    image: "/asian-male-crossfit-trainer-professional-photo.jpg",
+    image: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/asian-male-crossfit-trainer-professional-photo.jpg`,
     bio: "Cricket fitness expert, 10 years experience",
   },
   {
     name: "Meera Nair",
     role: "Boxing & Kushti Coach",
-    image: "/latina-female-boxing-trainer-professional-photo.jpg",
+    image: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/latina-female-boxing-trainer-professional-photo.jpg`,
     bio: "Kushti and boxing background, Indian Wrestling Federation certified",
   },
 ]
@@ -43,7 +43,7 @@ export function TrainersSection() {
             <div key={index} className="group">
               <div className="relative overflow-hidden rounded-xl mb-4">
                 <img
-                  src={trainer.image || "/placeholder.svg"}
+                  src={trainer.image || `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/placeholder.svg`}
                   alt={trainer.name}
                   className="w-full aspect-[3/4] object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
                 />

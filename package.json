@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "next build",
+    "build": "NEXT_PUBLIC_BASE_PATH=/power-gold-gym next build",
     "dev": "next dev",
     "lint": "eslint .",
     "start": "next start",

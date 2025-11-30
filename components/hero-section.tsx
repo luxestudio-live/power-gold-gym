@@ -16,7 +16,7 @@ export function HeroSection() {
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `url('/dark-gym-interior-with-dramatic-lighting-and-worko.jpg')`,
+          backgroundImage: `url('${process.env.NEXT_PUBLIC_BASE_PATH || ''}/dark-gym-interior-with-dramatic-lighting-and-worko.jpg')`,
         }}
       />
       <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black" />
