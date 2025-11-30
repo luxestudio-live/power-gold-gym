@@ -27,7 +27,6 @@ jobs:
         run: |
           export GITHUB_PAGES=true
           pnpm build
-          pnpm export
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
